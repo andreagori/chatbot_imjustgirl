@@ -10,56 +10,69 @@
     font-style: italic;
 }
 
+html {
+    background-color: rgb(248, 231, 248);
+    background-attachment: fixed;
+    height: 100%;
+}
+
+body, div, header, img {
+    margin: 0;
+    padding: 0;
+}
+
 .header nav {
     position: absolute;
-    top: 6%;
-    /* Posición inicial */
+    bottom: 0%;
     right: 0;
     z-index: 1;
+    margin-top: 0;
+    width: 100%;
+}
+
+.header nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 60, 184);
+    height: 5%;
+}
+
+.header nav #home {
+    margin-left: 5%;
 }
 
 .header nav #chatbot {
-    display: inline;
-    margin-left: 1400px;
-    margin-right: 50px;
-
+    margin-right: 5%;
 }
-
-.header nav li#home {
-    display: inline;
-    margin-right: 20px;
-}
-
 
 .header nav a {
     text-transform: uppercase;
-    color: black;
+    color: white;
     font-weight: bold;
     font-size: 22px;
     text-decoration: none;
+    margin-top: 0%;
 }
 
 .header nav a:hover {
-    color: rgb(45, 26, 221);
+    color: rgb(255, 189, 227);
     text-decoration: wavy;
-
 }
-
 .banner {
     width: 100%;
-    /* Esto hará que la imagen abarque el 100% del ancho de la pantalla */
+    /*Esto hará que la imagen abarque el 100% del ancho de la pantalla */
     height: auto;
-    /* Esto mantendrá la relación de aspecto de la imagen */
+    /*Esto mantendrá la relación de aspecto de la imagen */
     position: relative;
     margin: 0 auto;
+    margin-bottom: 0%;
 }
 
-/* .banner {
-    width: 940px;
-    position: relative;
-    margin: 0 auto;
-} */
-
+/* ---- Quote settings ---- */
 
 /* Ajusta la posición de nav para pantallas más grandes */
 @media screen and (max-width: 768px) {
@@ -74,32 +87,20 @@
     }
 }
 
-/* Ajusta la posición de nav para pantallas aún más grandes */
+/* Monitor Screen */
 @media screen and (min-width: 1200px) {
     .header nav {
-        top: 8%;
+        top: 15.7%;
         /* Ajusta este valor según sea necesario */
     }
+    
 }
 
-/* Estilos para pantallas de tamaño medio */
-@media screen and (max-width: 1024px) {
-    .header nav #chatbot {
-        margin-left: 700px;
-        /* Ajusta estos valores según sea necesario */
-    }
-}
-
-/* Ajusta la posición de nav para pantallas de 1360px */
+/* Andrea Lap Screen */
 @media screen and (max-width: 1360px) {
     .header nav {
-        top: 10%;
+        top: 16%;
         /* Ajusta este valor según sea necesario */
-    }
-
-    .header nav #chatbot {
-        margin-left: 800px;
-        /* Ajusta estos valores según sea necesario */
     }
 }
 
@@ -110,11 +111,11 @@
     }
 
     .header nav a {
-        font-size: 12px;
+        font-size: 25px;
     }
 
     .header nav #chatbot {
-        margin-left: 0px;
+        margin-left: 50px;
         margin-right: 20px;
         /* Ajusta estos valores según sea necesario */
     }
