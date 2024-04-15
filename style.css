@@ -92,7 +92,7 @@ img {
 /* ---- Quote settings ---- */
 
 main {
-    margin-top: 5%;
+    margin-top: 3%;
     padding: 0;
     position: relative;
 }
@@ -107,32 +107,41 @@ main {
     color: rgb(255, 60, 184);
     /* ovalo behind it*/
     border-radius: 5cm;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.603);
     width: 80%;
     margin-left: 10%;
     padding: 2%;
 }
 
+/* ----- Divisions with each space */
+
+.flex-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+/* ---- Meet Regina part ----*/
 .meetRegina {
     display: flex;
     justify-content: left;
     align-items: left;
     margin-top: 2%;
-    width: 40%;
+    width: 46%;
     height: 25vh;
-    margin: 1% auto;
     margin-left: 3%;
+    margin-right: auto;
     border-radius: 1cm;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.603);
     padding: 1%;
 }
 
 .meetRegina .text-container {
-    display: flex; 
-    flex-direction: column; 
-    justify-content: center; 
-    align-items: center; 
-    width: 100%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 .meetRegina .text-container h2 {
@@ -148,7 +157,8 @@ main {
     font-size: 80px;
     font-weight: bolder;
     color: rgb(255, 60, 184);
-    margin-left: 0; /* Cambia esto de -50% a 0 */
+    margin-left: 0;
+    /* Cambia esto de -50% a 0 */
     margin-top: -2%;
     text-align: center;
 }
@@ -166,21 +176,238 @@ main {
     padding: 2%;
     background-color: rgb(255, 60, 184);
 }
+
 .meetRegina .text-container #start a {
     font-family: "Concert One", serif;
     font-size: 50px;
     font-weight: bolder;
     color: rgb(245, 240, 243);
-    text-decoration: none;  /* Quita el subrayado */
-    position: relative; /* Añade esto */
-    z-index: 1000; /* Añade esto */
+    text-decoration: none;
+    /* Quita el subrayado */
+    position: relative;
+    /* Añade esto */
+    z-index: 1000;
+    /* Añade esto */
 }
 
 .meetRegina .text-container #start a:hover {
     color: rgb(255, 189, 227);
-    text-decoration: wavy; 
+    text-decoration: wavy;
 }
 
+/* ----- Next Pinterest space -----*/
+
+.pinterest-space {
+    display: flex;
+    flex-direction: column;
+    /* Añade esto */
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 30vh;
+    border-radius: 1cm;
+    margin-top: 2%;
+    margin-right: 1%;
+    background-color: white;
+    padding: 1%;
+}
+
+.pinterest-space img {
+    width: 70%;
+    /* Ajusta esto según sea necesario */
+    height: auto;
+    /* Cambia esto de 25vh a auto */
+    margin-top: -2.5%;
+    background-color: white;
+    /* Ajusta esto según sea necesario */
+    padding: 1%;
+}
+
+.pinterest-space p#visit {
+    font-family: "Concert One", serif;
+    font-size: 30px;
+    font-weight: bolder;
+    color: rgb(245, 240, 243);
+    margin-top: -6%;
+    /* Ajusta esto según sea necesario */
+    text-align: center;
+    border-radius: 1cm;
+    width: 50%;
+    /* Cambia esto de 30% a 100% */
+    padding: 2%;
+    background-color: rgb(255, 60, 184);
+}
+
+#visit a {
+    font-family: "Concert One", serif;
+    font-size: 30px;
+    font-weight: bolder;
+    color: rgb(245, 240, 243);
+    text-decoration: none;
+    /* Quita el subrayado */
+    position: relative;
+    /* Añade esto */
+    z-index: 1000;
+    /* Añade esto */
+}
+
+#visit a:hover {
+    color: rgb(255, 189, 227);
+    text-decoration: wavy;
+}
+
+/* ----- Next Pantone 2024 color space -----*/
+.pantone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    /* Ajusta esto según sea necesario */
+    height: 30vh;
+    border-radius: 1cm;
+    margin-top: 2%;
+    margin-right: 3%;
+    background-color: white;
+    padding: 1%;
+}
+
+.pantone img {
+    width: 70%;
+    /* Ajusta esto según sea necesario */
+    height: auto;
+    background-color: white;
+    /* Ajusta esto según sea necesario */
+    padding: 1%;
+}
+
+.pantone .text-container {
+    width: 30%;
+    /* Ajusta esto según sea necesario */
+    display: flex;
+    justify-content: center;
+    margin-left: -13%;
+}
+
+.pantone .text-container p {
+    flex: 1;
+    /* Permite que el texto ocupe el espacio restante */
+    text-align: center;
+    font-family: "Concert One", serif;
+    font-weight: bold;
+    font-size: 45px;
+    color: black;
+}
+
+/* Nails Picture and About*/
+.flex-container-2 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+
+.nailsPic img {
+    width: 98vh;
+    /* Ajusta esto según sea necesario */
+    height: auto;
+    object-fit: cover;
+    margin-top: -3%;
+    margin-left: 6%;
+    background-color: white;
+    border-radius: .5cm;
+    padding: 1.5%;
+}
+
+.flex-container-2 .text-container {
+    background-color: rgba(255, 255, 255, 0.603);
+    padding: 5%;
+    width: 70%;
+    height: 25vh;
+    border-radius: 1cm;
+    margin-top: 2%;
+    margin-left: 5%;
+    margin-right: 3%;
+}
+
+.flex-container-2 .text-container h2 {
+    font-family: "Sedan", sans-serif;
+    font-size: 80px;
+    color: rgb(255, 60, 184);
+    margin-top: 0%;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.flex-container-2 .text-container p {
+    text-align: center;
+}
+
+/* GitHub profiles */
+.text-container {
+    position: relative;
+}
+
+.githubA,
+.githubT {
+    position: absolute;
+    top: 0;
+}
+
+.githubA {
+    display: inline;
+    background-color: white;
+    border-radius: 2cm;
+    width: 25%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30%;
+    margin-left: 5%;
+    padding: 2%;
+}
+
+.githubA img {
+    width: 100%;
+    height: auto;
+}
+
+.githubA p2 {
+    font-family: "Concert One", sans-serif;
+    font-size: 33px;
+    color: black;
+    margin-top: 0%;
+    text-align: center;
+
+}
+
+.githubT {
+    display: inline;
+    background-color: white;
+    border-radius: 2cm;
+    width: 25%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30%;
+    margin-left: 40%;
+    padding: 2%;
+}
+
+.githubT img {
+    width: 81%;
+    height: auto;
+}
+
+.githubT p {
+    font-family: "Concert One", sans-serif;
+    font-size: 33px;
+    color: black;
+    margin-top: 0%;
+    text-align: center;
+    margin-left: -5%;
+}
 
 /* Ajusta la posición de nav para pantallas más grandes */
 @media screen and (max-width: 768px) {
@@ -198,7 +425,7 @@ main {
 /* Monitor Screen */
 @media screen and (min-width: 1200px) {
     .header nav {
-        top: 15.7%;
+        top: 15.5%;
         /* Ajusta este valor según sea necesario */
     }
 
@@ -207,8 +434,58 @@ main {
 /* Andrea Lap Screen */
 @media screen and (max-width: 1360px) {
     .header nav {
-        top: 16%;
+        top: 15.8%;
         /* Ajusta este valor según sea necesario */
+    }
+
+    .meetRegina .text-container h2 {
+        font-size: 40px;
+    }
+
+    .meetRegina .text-container p {
+        font-size: 50px;
+    }
+
+    .meetRegina .text-container p#start {
+        font-size: 30px;
+    }
+
+    .pinterest-space img {
+        margin-top: 4%;
+    }
+
+    .pantone .text-container p {
+
+        font-size: 31px;
+    }
+
+    .flex-container-2 .text-container {
+        margin-left: 5.5%;
+    }
+
+    .nailsPic img {
+        width: 105vh;
+        /* Ajusta esto según sea necesario */
+    }
+
+    .githubA {
+        width: 35%;
+        height: 10%;
+        justify-content: center;
+        align-items: center;
+        margin-top: 35%;
+        margin-left: 0%;
+        padding: 2%;
+    }
+
+    .githubT {
+        width: 35%;
+        height: 10%;
+        justify-content: center;
+        align-items: center;
+        margin-top: 35%;
+        margin-left: 40%;
+        padding: 2%;
     }
 }
 
