@@ -139,7 +139,7 @@ main {
     font-family: "Concert One", sans-serif;
     font-size: 80px;
     color: black;
-    margin-top: -15%;
+    margin-top: 0%;
     text-align: center;
 }
 
@@ -149,9 +149,38 @@ main {
     font-weight: bolder;
     color: rgb(255, 60, 184);
     margin-left: 0; /* Cambia esto de -50% a 0 */
-    margin-top: 2%;
+    margin-top: -2%;
     text-align: center;
 }
+
+.meetRegina .text-container p#start {
+    font-family: "Concert One", serif;
+    font-size: 50px;
+    font-weight: bolder;
+    color: rgb(245, 240, 243);
+    margin-left: 0;
+    margin-top: 4%;
+    text-align: center;
+    border-radius: 1cm;
+    width: 30%;
+    padding: 2%;
+    background-color: rgb(255, 60, 184);
+}
+.meetRegina .text-container #start a {
+    font-family: "Concert One", serif;
+    font-size: 50px;
+    font-weight: bolder;
+    color: rgb(245, 240, 243);
+    text-decoration: none;  /* Quita el subrayado */
+    position: relative; /* Añade esto */
+    z-index: 1000; /* Añade esto */
+}
+
+.meetRegina .text-container #start a:hover {
+    color: rgb(255, 189, 227);
+    text-decoration: wavy; 
+}
+
 
 /* Ajusta la posición de nav para pantallas más grandes */
 @media screen and (max-width: 768px) {
