@@ -10,13 +10,28 @@
     font-style: italic;
 }
 
+.concert-one-regular {
+    font-family: "Concert One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.satisfy-regular {
+    font-family: "Satisfy", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
 html {
-    background-color: rgb(248, 231, 248);
+    background-color: rgb(250, 230, 250);
     background-attachment: fixed;
     height: 100%;
 }
 
-body, div, header, img {
+body,
+div,
+header,
+img {
     margin: 0;
     padding: 0;
 }
@@ -42,18 +57,19 @@ body, div, header, img {
 }
 
 .header nav #home {
-    margin-left: 5%;
+    margin-left: 2.5%;
 }
 
 .header nav #chatbot {
-    margin-right: 5%;
+    margin-right: 2.5%;
 }
 
 .header nav a {
+    font-family: "Concert One", sans-serif;
     text-transform: uppercase;
     color: white;
     font-weight: bold;
-    font-size: 22px;
+    font-size: 30px;
     text-decoration: none;
     margin-top: 0%;
 }
@@ -62,6 +78,7 @@ body, div, header, img {
     color: rgb(255, 189, 227);
     text-decoration: wavy;
 }
+
 .banner {
     width: 100%;
     /*Esto hará que la imagen abarque el 100% del ancho de la pantalla */
@@ -73,6 +90,68 @@ body, div, header, img {
 }
 
 /* ---- Quote settings ---- */
+
+main {
+    margin-top: 5%;
+    padding: 0;
+    position: relative;
+}
+
+.quote h1 {
+    /* Font settings and its background */
+    font-family: "Sedan", serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
+    color: rgb(255, 60, 184);
+    /* ovalo behind it*/
+    border-radius: 5cm;
+    background-color: white;
+    width: 80%;
+    margin-left: 10%;
+    padding: 2%;
+}
+
+.meetRegina {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    margin-top: 2%;
+    width: 40%;
+    height: 25vh;
+    margin: 1% auto;
+    margin-left: 3%;
+    border-radius: 1cm;
+    background-color: white;
+    padding: 1%;
+}
+
+.meetRegina .text-container {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    width: 100%; 
+}
+
+.meetRegina .text-container h2 {
+    font-family: "Concert One", sans-serif;
+    font-size: 80px;
+    color: black;
+    margin-top: -15%;
+    text-align: center;
+}
+
+.meetRegina .text-container p {
+    font-family: "Satisfy", cursive;
+    font-size: 80px;
+    font-weight: bolder;
+    color: rgb(255, 60, 184);
+    margin-left: 0; /* Cambia esto de -50% a 0 */
+    margin-top: 2%;
+    text-align: center;
+}
 
 /* Ajusta la posición de nav para pantallas más grandes */
 @media screen and (max-width: 768px) {
@@ -93,7 +172,7 @@ body, div, header, img {
         top: 15.7%;
         /* Ajusta este valor según sea necesario */
     }
-    
+
 }
 
 /* Andrea Lap Screen */
