@@ -68,3 +68,17 @@ body {
         height: 80%;
     }
 }
+
+@media screen and (min-width: 1360px){
+
+    /* Corregido aquí */
+    .container {
+        width: 60%;
+        height: 80%;
+    }
+
+    .container iframe {
+        min-width: 400px; /* Establece un ancho mínimo para el iframe en pantallas más grandes */
+        min-height: 50vh; /* Establece una altura mínima para el iframe en pantallas más grandes */
+    }
+}
