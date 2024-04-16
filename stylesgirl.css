@@ -1,0 +1,37 @@
+body {
+    background-image: url('img/ImJustGirl_botbackground.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.container {
+    display: flex;
+    position: absolute;
+    width: 25%; /* Cambiado a porcentaje */
+    height: 70%; /* Cambiado a porcentaje */
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 50px;
+    padding: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Ajustes para pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 80%; /* Cambiado a porcentaje */
+        height: 80%; /* Cambiado a porcentaje */
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1300px) { /* Corregido aquí */
+    .container {
+        width: 60%;
+        height: 80%;
+    }
+}
