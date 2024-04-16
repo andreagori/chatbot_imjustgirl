@@ -429,17 +429,21 @@ main {
         /* Ajusta este valor según sea necesario */
     }
 
+    .pinterest-space img {
+        margin-top: 2%;
+    }
+
 }
 
 /* Andrea Lap Screen */
-@media screen and (max-width: 1360px) {
+@media screen and (max-width: 1366px) {
     .header nav {
         top: 15.8%;
         /* Ajusta este valor según sea necesario */
     }
 
     .meetRegina .text-container h2 {
-        font-size: 40px;
+        font-size: 30px;
     }
 
     .meetRegina .text-container p {
