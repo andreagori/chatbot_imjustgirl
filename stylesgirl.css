@@ -1,3 +1,9 @@
+.satisfy-regular {
+    font-family: "Satisfy", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
 body {
     background-image: url('img/ImJustGirl_botbackground.png');
     background-size: cover;
@@ -9,8 +15,9 @@ body {
 .container {
     display: flex;
     position: absolute;
-    width: 25%; /* Cambiado a porcentaje */
-    height: 70%; /* Cambiado a porcentaje */
+    flex-direction: column;
+    width: 80%;
+    height: 80%;
     align-items: center;
     justify-content: center;
     background-color: rgba(255, 255, 255, 0.8);
@@ -19,17 +26,43 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    transition: transform 0.5s;
 }
 
-/* Ajustes para pantallas más pequeñas */
-@media screen and (max-width: 768px) {
+.container:hover {
+    transform: translate(-50%, -50%) scale(1.1); /* Añade esto */
+}
+
+.container p {
+    font-family: "Satisfy", cursive;
+    font-size: 3.5em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.container iframe {
+    width: 100%;
+    height: 90%; 
+    border-radius: 1cm;
+    margin-top: 2%;
+}
+
+/* Ajustes para pantallas más grandes */
+@media screen and (min-width: 768px) {
     .container {
-        width: 80%; /* Cambiado a porcentaje */
-        height: 80%; /* Cambiado a porcentaje */
+        width: 50%; /* Aumenta el tamaño del contenedor para pantallas más grandes */
+        height: 70%;
+    }
+
+    .container iframe {
+        min-width: 400px; /* Establece un ancho mínimo para el iframe en pantallas más grandes */
+        min-height: 500px; /* Establece una altura mínima para el iframe en pantallas más grandes */
     }
 }
 
-@media screen and (min-width: 769px) and (max-width: 1300px) { /* Corregido aquí */
+@media screen and (min-width: 769px) and (max-width: 1300px) {
+
+    /* Corregido aquí */
     .container {
         width: 60%;
         height: 80%;
